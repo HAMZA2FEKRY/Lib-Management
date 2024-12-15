@@ -1,0 +1,41 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "Library Management API"
+  description: "API documentation for managing a library."
+host: "localhost:4000"
+basePath: "/api"
+schemes:
+  - "http"
+paths:
+  /books:
+    get:
+      summary: "List all books"
+      responses:
+        200:
+          description: "A list of books"
+    post:
+      summary: "Add a new book"
+      parameters:
+        - in: "body"
+          name: "body"
+          required: true
+          schema:
+            $ref: "#/definitions/Book"
+      responses:
+        201:
+          description: "Book added successfully"
+definitions:
+  Book:
+    type: "object"
+    properties:
+      title:
+        type: "string"
+      author:
+        type: "string"
+      published_year:
+        type: "integer"
+      isbn:
+        type: "string"
+      genre:
+        type: "string"

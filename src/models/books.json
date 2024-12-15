@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Hamza and Zewail",
+      "author": "Hamza ",
+      "published_year": 2022,
+      "isbn": "9780141439518",
+      "genre": "Romance"
+    },
+    {
+      "title": "The Happenes",
+      "author": "J.R.R. Morshidy",
+      "published_year": 2010,
+      "isbn": "9780261102217",
+      "genre": "Fantasy"
+    },
+    {
+      "title": "Fahrenheit 451",
+      "author": "Roshdy",
+      "published_year": 2022,
+      "isbn": "9781451673319",
+      "genre": "Science Fiction"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D.Zewail",
+      "published_year": 2021,
+      "isbn": "9780316769488",
+      "genre": "Fiction"
+    },
+    {
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "published_year": 2023,
+      "isbn": "9781503280786",
+      "genre": "Adventure"
+    }
+  ]
+  

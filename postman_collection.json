@@ -1,0 +1,104 @@
+{
+    "info": {
+      "name": "Library Management API",
+      "description": "Postman collection for Library Management API.",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Add a Book",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"Sample Book\",\n  \"author\": \"John Doe\",\n  \"published_year\": 2023,\n  \"isbn\": \"123456789\",\n  \"genre\": \"Fiction\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/api/books",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "books"]
+          }
+        }
+      },
+      {
+        "name": "Get All Books",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/api/books",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "books"]
+          }
+        }
+      },
+      {
+        "name": "Search Books",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/api/books/search?author=John%20Doe",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "books", "search"],
+            "query": [
+              {
+                "key": "author",
+                "value": "John Doe"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Update a Book",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"Updated Title\",\n  \"author\": \"Jane Doe\",\n  \"published_year\": 2023,\n  \"genre\": \"Drama\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:3000/api/books/123456789",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "books", "123456789"]
+          }
+        }
+      },
+      {
+        "name": "Delete a Book",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/api/books/123456789",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "3000",
+            "path": ["api", "books", "123456789"]
+          }
+        }
+      }
+    ]
+  }
+  
